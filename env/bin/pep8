@@ -1,5 +1,4 @@
-#!/home/taufique/Downloads/django-farming/env/bin/python3.7
-
+#!/home/taufique/Downloads/ecommerce/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

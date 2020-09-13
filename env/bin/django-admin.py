@@ -1,4 +1,4 @@
-#!/home/taufique/Downloads/django-farming/env/bin/python3.7
+#!/home/taufique/Downloads/ecommerce/env/bin/python
 from django.core import management
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-#!/home/taufique/Downloads/django-farming/env/bin/python3.7
+#!/home/taufique/Downloads/ecommerce/env/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'autopep8==1.4.4','console_scripts','autopep8'
 __requires__ = 'autopep8==1.4.4'
 import re

@@ -20,14 +20,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #For less apps
 ###https://l.facebook.com/l.php?u=https%3A%2F%2Fmyaccount.google.com%2Flesssecureapps%3Fpli%3D1%26fbclid%3DIwAR2CL_EvS0257JaBsqcIGK47_5EHxSaw1ZQMk2h9-R3laFTvsA8j9LiUNOw&h=AT3bkopboKv9FC-NRSloYitPDjXJuutczWQYT8kAt6GnU9F4CT9k35W_T75UX-DW0neaCl0YuO36C38uvfX492HiRRNDrJCcpSADz4c57njDKJSNRoW4O0Nq0l7QaQ
 ####
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'#backends.smtp.EmailBackend
-EMAIL_HOST = 'smtp.gmail.com'
+# Email backend settings for Django
+EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend' #  'django.core.mail.backends.console.EmailBackend'# 
+EMAIL_HOST = 'smtp.zoho.com'
 ##put yours email
-EMAIL_HOST_USER = ''
+EMAIL_HOST_USER = 'info@novonil.com'
 ##put your password
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_PASSWORD = 'WMmTFvxL93YN'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+DEFAULT_FROM_EMAIL='TAUFIQUE_HATBAJAR<info@novonil.com>'
+
 
 
 DATABASES = {

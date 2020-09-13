@@ -9,7 +9,8 @@ from django.contrib.auth.models import User
 CATEGORY_CHOICES = (
     ('fruits', 'Fruits'),
     ('crops', 'Crops'),
-    ('vegetable', 'Vegetable')
+    ('vegetable', 'Vegetable'),
+    ('meat', 'Meat'),
 	
 )
 
@@ -28,7 +29,7 @@ ADDRESS_CHOICES = (
 class UserProfile(models.Model):
     user = models.OneToOneField(
         User, on_delete=models.CASCADE, default=1)
-    stripe_customer_id = models.CharField(max_length=50, blank=True, null=True)
+    payment_address = models.CharField(max_length=50, blank=True, null=True)
     one_click_purchasing = models.BooleanField(default=False)
 
     def __str__(self):
@@ -141,7 +142,7 @@ class Address(models.Model):
                              on_delete=models.CASCADE, default=1)
     street_address = models.CharField(max_length=100)
     apartment_address = models.CharField(max_length=100)
-    country = CountryField(multiple=False)
+    country =  models.CharField(max_length=100, default='Bangladesh')#CountryField(multiple=False)
     zip = models.CharField(max_length=100)
     address_type = models.CharField(max_length=1, choices=ADDRESS_CHOICES)
     default = models.BooleanField(default=False)
